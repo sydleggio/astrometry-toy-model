@@ -64,7 +64,7 @@ def plot_gamma_vs_theta():
     theta_rad = np.append(theta_rad, np.pi)
     gamma = np.append(gamma, 0.0)
 
-    print(f'  gamma(theta->0) = {gamma[0]:.6f}  (expect ~1 by normalization)')
+    print(f'  gamma(theta->0) = {gamma[0]:.6f}')
     print(f'  gamma(pi/2)     = {gamma[np.argmin(np.abs(theta_rad - np.pi/2))]:.6f}')
     print(f'  gamma(pi)       = {gamma[-1]:.6f}')
 
